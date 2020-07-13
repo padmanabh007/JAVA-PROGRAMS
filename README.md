@@ -1,2 +1,2 @@
 # JAVA-PROGRAMS
-Java programs contains simple java programs 
+Java programs repositories contains simple java programs 
