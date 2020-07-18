@@ -73,6 +73,18 @@ public class Rps{
         System.out.println("Scores");
         System.out.println("Computer You");
         System.out.println(c+"         "+y);
+        
+        
+        if(c>y){
+            System.out.println("Computer Wins");
+        }
+        else if(c<y){
+             System.out.println("You Wins");
+        }
+        else{
+             System.out.println("Tie");
+        }
+        
 
 
         //Regards
