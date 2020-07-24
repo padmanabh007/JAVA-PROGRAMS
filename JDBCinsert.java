@@ -10,12 +10,12 @@ public class JDBCinsert {
 		ResultSet rst=null;
 		
 		String url="jdbc:mysql://localhost:3306/demo";
-		String user="student";
-		String password="student";
+		String user="";//database name
+		String password="";//database password
 		
 		try {
 			//String query="select * from student";
-			String sql="insert into student(userid,username) values(6,'Aju')";
+			String sql="insert into student(userid,username) values(,'')";//Entering the values to be inserted
 			Class.forName("com.mysql.jdbc.Driver");
 			con=DriverManager.getConnection(url, user, password);
 			st=con.createStatement();
