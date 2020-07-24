@@ -10,8 +10,8 @@ public class JDBCdelete {
 		ResultSet rst=null;
 		
 		String url="jdbc:mysql://localhost:3306/demo";
-		String user="student";
-		String password="student";
+		String user="";//database name
+		String password="";//datbase password
 		
 		try {
 			String sql="delete from student where userid=6";
