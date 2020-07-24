@@ -9,12 +9,12 @@ public class JDBCupdate {
 		ResultSet rst=null;
 		
 		String url="jdbc:mysql://localhost:3306/demo";
-		String user="student";
-		String password="student";
+		String user="";//database name
+		String password="student";//database password
 		
 		try {
 			
-			String sql="update student set username='Akshay' where userid=3";
+			String sql="update student set username='' where userid=";//Query to update
 			Class.forName("com.mysql.jdbc.Driver");
 			con=DriverManager.getConnection(url, user, password);
 			st=con.createStatement();
