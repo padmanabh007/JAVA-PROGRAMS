@@ -7,8 +7,8 @@ public class DemoClass {
 	public static void main(String[] args) throws Exception {
 		
 		String url="jdbc:mysql://localhost:3306/demo";//mysql is server/LAN type machine
-		String user="student";
-		String password="student";
+		String user="";//user name of database
+		String password="";//password of database
 		//String query="select username from student where userid=3";//to get values of particular conditon
 		
 		//String query="select * from student";//to print whole table
@@ -16,8 +16,8 @@ public class DemoClass {
 		
 		//String query="insert into student values(4,'Asvin')";//to update table so no need of resultset we use count
 		//ELSE
-		int userid=5;
-		String username="JK";
+		int userid=5;//id of student going to enter
+		String username="";//use name you want to enter
 		//String query="insert into student values("+userid+','+username+")";
 		//if we have many inputs so we use prepare statement
 		String query="insert into student values(?,?)";//this is used during prepare statement
