@@ -24,7 +24,7 @@ public class JDBCinsert {
 			
 			
 			int count=st.executeUpdate(sql);
-			//while(rst.next()) {
+			//while(rst.next()) {//toget the full details
 				//System.out.println(rst.getInt(1) +" "+rst.getString("username"));
 			//}
 		}
