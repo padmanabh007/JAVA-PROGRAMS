@@ -7,7 +7,7 @@ public class DemoClass {
 	public static void main(String[] args) throws Exception {
 		
 		String url="jdbc:mysql://localhost:3306/demo";//mysql is server/LAN type machine
-		String user="";//user name of database
+		String user="";//database name
 		String password="";//password of database
 		//String query="select username from student where userid=3";//to get values of particular conditon
 		
