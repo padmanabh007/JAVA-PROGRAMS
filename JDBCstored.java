@@ -10,8 +10,8 @@ public class JDBCstored {
 		CallableStatement st=null;
 		
 		String url="jdbc:mysql://localhost:3306/demo";
-		String user="student";
-		String password="student";
+		String user="";//database name
+		String password="";//database password
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -20,7 +20,7 @@ public class JDBCstored {
 			int id_no=2;
 			int stud_marks=5;
 			
-			st=con.prepareCall("{call increase_marks(?,?)}");
+			st=con.prepareCall("{call increase_marks(?,?)}");//Calling stored procedure created in my sql
 			st.setInt(1, id_no);
 			st.setInt(2, stud_marks);
 			
