@@ -10,8 +10,8 @@ public class JDBCprepared {
 		ResultSet rst=null;
 		
 		String url="jdbc:mysql://localhost:3306/demo";
-		String user="student";
-		String password="student";
+		String user="";//database name
+		String password="";//database password
 		
 		try {
 			
