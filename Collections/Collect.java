@@ -35,9 +35,13 @@ public class Collect {
         c1.add(1);
         c1.add(2);
         c1.add(4);
+
         for (Integer integer : c1) {
             System.out.println(integer);//o/p-->1 2 4
         }
+        //USING STREAMS
+        c1.forEach(num -> System.out.println(num));
+        
         c1.remove(1);//to remove insde the collction
         for (Integer integer : c1) {
             System.out.println(integer);//o/p-->2 4
